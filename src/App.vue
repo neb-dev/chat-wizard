@@ -1,7 +1,9 @@
 <template>
   <v-app>
     <v-navigation-drawer app>
-      <!-- -->
+      <notepad />
+      <notepad />
+      <notepad />
     </v-navigation-drawer>
 
     <v-app-bar app>
@@ -11,9 +13,7 @@
     <!-- Sizes your content based upon application components -->
     <v-main>
       <!-- Provides the application the proper gutter -->
-      <v-container fluid>
-        <notepad />
-      </v-container>
+      <v-container fluid> </v-container>
     </v-main>
 
     <v-footer app>
