@@ -1,17 +1,17 @@
 <template>
   <v-app>
-    <v-navigation-drawer app class="accent">
+    <v-navigation-drawer app class="secondary">
       <notepad />
       <notepad />
       <notepad />
     </v-navigation-drawer>
 
-    <v-app-bar app flat class="accent">
+    <v-app-bar app flat class="secondary">
       <!-- -->
     </v-app-bar>
 
     <!-- Sizes your content based upon application components -->
-    <v-main class="primary">
+    <v-main class="background">
       <!-- Provides the application the proper gutter -->
       <v-container fluid> </v-container>
     </v-main>

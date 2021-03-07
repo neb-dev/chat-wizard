@@ -1,6 +1,6 @@
 <template>
   <div class="notepad">
-    <v-card class="my-2 py-3">
+    <v-card class="my-2 py-3 primary">
       <v-form class="my-0 py-0">
         <v-container class="my-0 py-0">
           <v-row class="my-0 py-0">
@@ -30,13 +30,12 @@
           </v-row>
           <v-row class="my-0 py-0">
             <v-col class="my-0 py-0">
-              <v-text-field
+              <v-textarea
                 v-model="issue"
                 label="issue"
-                clearable
+                rows="1"
                 class="my-0 py-0"
-                height="20px"
-              ></v-text-field>
+              ></v-textarea>
             </v-col>
           </v-row>
           <v-row class="my-0 py-0">
@@ -75,27 +74,17 @@
           </v-row>
           <v-row class="text-center my-0 py-0">
             <v-col class="my-0 py-0">
-              <v-btn
-                small
-                color="green accent-3"
-                class="my-0 py-0"
-                height="25px"
-              >
+              <v-btn small color="success" class="my-0 py-0" height="25px">
                 <v-icon dense>mdi-clipboard-text-outline</v-icon>
               </v-btn>
             </v-col>
             <v-col class="my-0 py-0">
-              <v-btn small color="red accent-3" class="my-0 py-0" height="25px">
+              <v-btn small color="error" class="my-0 py-0" height="25px">
                 <v-icon dense>mdi-trash-can-outline</v-icon>
               </v-btn>
             </v-col>
             <v-col class="my-0 py-0">
-              <v-btn
-                small
-                color="cyan accent-2"
-                class="my-0 py-0"
-                height="25px"
-              >
+              <v-btn small color="info" class="my-0 py-0" height="25px">
                 <v-icon dense>mdi-restore</v-icon>
               </v-btn>
             </v-col>
