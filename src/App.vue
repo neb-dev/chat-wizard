@@ -1,9 +1,11 @@
 <template>
   <v-app>
     <v-navigation-drawer app class="secondary">
-      <notepad />
-      <notepad />
-      <notepad />
+      <v-container px-0>
+        <notepad />
+        <notepad />
+        <notepad />
+      </v-container>
     </v-navigation-drawer>
 
     <v-app-bar app flat class="secondary">
