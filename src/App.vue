@@ -2,9 +2,9 @@
   <v-app>
     <v-navigation-drawer app class="secondary">
       <v-container px-0>
-        <notepad />
-        <notepad />
-        <notepad />
+        <notepad class="notepad" />
+        <notepad class="notepad" />
+        <notepad class="notepad" />
       </v-container>
     </v-navigation-drawer>
 
@@ -15,7 +15,7 @@
     <!-- Sizes your content based upon application components -->
     <v-main class="background">
       <!-- Provides the application the proper gutter -->
-      <v-container fluid> </v-container>
+      <v-container fluid></v-container>
     </v-main>
   </v-app>
 </template>
@@ -35,7 +35,10 @@ export default {
 </script>
 
 <style scoped>
-/* #app {
-  background-color: var(--v-background-base);
-} */
+.notepad {
+  border-bottom: 1px solid rgba(248, 248, 242, 0.4);
+}
+.notepad:last-child {
+  border-bottom: none;
+}
 </style>
