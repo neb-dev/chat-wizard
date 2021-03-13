@@ -12,8 +12,18 @@
           <v-card-title class="headline">
             {{ item.title }}
           </v-card-title>
-          <script-preview />
-          <v-card-text>{{ item.content }}</v-card-text>
+          <v-card-text>
+            <v-container>
+              <v-row>
+                <v-col>
+                  <script-preview />
+                </v-col>
+                <v-col>
+                  <script-grid />
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-card-text>
         </v-card>
       </v-tab-item>
     </v-tabs-items>
@@ -22,9 +32,11 @@
 
 <script>
 import ScriptPreview from "./ScriptPreview.vue";
+import ScriptGrid from "./ScriptGrid.vue";
 export default {
   components: {
-    ScriptPreview
+    ScriptPreview,
+    ScriptGrid
   },
   data() {
     return {
