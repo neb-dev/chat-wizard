@@ -42,7 +42,7 @@ export default {
     return {
       tab: null,
       items: [
-        { tab: "One", title: "Templates", content: "Tab 1 Content" },
+        { tab: "Templates", title: "Templates", content: "Tab 1 Content" },
         { tab: "Two", content: "Tab 2 Content" },
         { tab: "Three", content: "Tab 3 Content" },
         { tab: "Four", content: "Tab 4 Content" },

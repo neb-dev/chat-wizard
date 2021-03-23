@@ -2,27 +2,13 @@
   <v-container>
     <v-row>
       <v-col>
-        <v-btn depressed color="accent">
-          Button 1
-        </v-btn>
-        <v-btn depressed color="accent">
-          Button 2
-        </v-btn>
-        <v-btn depressed color="accent">
-          Button 3
-        </v-btn>
-        <v-btn depressed color="accent">
-          Button 4
-        </v-btn>
-        <v-btn depressed color="accent">
-          Button 5
-        </v-btn>
-        <v-btn depressed color="accent">
-          Button 6
-        </v-btn>
-        <v-btn depressed color="accent">
-          Button 7
-        </v-btn>
+        <v-btn
+          depressed
+          class="accent ma-2"
+          v-for="script in scripts"
+          :key="script.id"
+          >{{ script.title }}</v-btn
+        >
       </v-col>
     </v-row>
   </v-container>
@@ -32,7 +18,36 @@
 export default {
   data() {
     return {
-      scripts: [{}]
+      scripts: [
+        {
+          id: 1,
+          title: "Button 1"
+        },
+        {
+          id: 2,
+          title: "Button 2"
+        },
+        {
+          id: 3,
+          title: "Button 3"
+        },
+        {
+          id: 4,
+          title: "Button 4"
+        },
+        {
+          id: 5,
+          title: "Button 5"
+        },
+        {
+          id: 6,
+          title: "Button 6"
+        },
+        {
+          id: 7,
+          title: "Button 7"
+        }
+      ]
     };
   }
 };
